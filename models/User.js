@@ -21,4 +21,7 @@ const userSchema = new mongoose.Schema({
     enum: ["Admin", "Student", "Instructor"],
     requires: true,
   },
+  additonalDetails: {
+    type: mongoose.Schema.Types.ObjectId,
+  },
 });
